@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你能猜中上帝掷的骰子吗？</title>
+    <style>
+        body {
+            font-size: 100px;
+            text-align: center;
+            color: dodgerblue;
+        }
+    </style>
+    <script>
+        function guess() {
+            if (binggo) {  //binggo = true
+                return; //猜中了就跳出去了，不会让你继续猜
+            }
+           else {
+                var guess = prompt("你猜骰子是几号？输入阿拉伯数字");
+                if (guess == a) {
+                    document.write("你真棒！猜中啦!");
+                    binggo = true;
+                }
+                else if (guess>a) {
+                    document.write("猜大了！");
+                }
+                else {
+                    document.write("猜小了！");
+                    }
+           }
+        }
+        var binggo = false;
+        var a = Math.random();
+        a = Math.ceil(a*6);
+        console.log(a);
+        //document.write(a);
+        //document.write("<img src=\"images/"+a+".png\"/>");
+
+        guess();
+        guess();
+        guess();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
