@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妈妈再也不用担心我的学习了</title>
+    <style>
+        body{
+            font-size: 80px;
+        }
+    </style>
+    <script>
+        function getAnswer() {
+            var random = Math.ceil(Math.random()*4);
+            var option = String.fromCharCode(random+64);
+            document.write(option);
+            //str = "A";
+            //document.write(str.charCodeAt()); 与String.fromCharCode(code)是相反的
+        }
+
+        function get5Answers() {
+            getAnswer();
+            getAnswer();
+            getAnswer();
+            getAnswer();
+            getAnswer();
+            document.write("<br/>");
+        }
+
+        get5Answers();
+        get5Answers();
+        get5Answers();
+        get5Answers();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
